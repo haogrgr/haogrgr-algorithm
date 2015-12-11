@@ -14,11 +14,8 @@ import java.util.List;
  */
 public class Lists {
 
-	public static List<Object> EMPTY = Collections.unmodifiableList(new ArrayList<Object>(0));
-
-	@SuppressWarnings("unchecked")
 	public static <T> List<T> empty() {
-		return (List<T>) EMPTY;
+		return Collections.emptyList();
 	}
 
 	/**
